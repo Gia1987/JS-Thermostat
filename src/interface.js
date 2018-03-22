@@ -6,4 +6,9 @@ $(document).ready(function(){
     thermostat.up(1);
   $('#tempdisplay').text(thermostat.temperature()+' °C');
   })
+
+  $('#down').on('click', function(){
+    thermostat.down(1);
+    $('#tempdisplay').text(thermostat.temperature()+ ' °C');
+  })
 })
