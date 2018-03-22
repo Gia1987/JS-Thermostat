@@ -15,4 +15,8 @@ As a technician
 I can make any changes to the thermostat
 I want to decrease the temperature down
 
+As a technician
+I can setup a minimum temperature to the thermostat
+I want that the temperature does not go below the limit of 10 degrees
+
 ```

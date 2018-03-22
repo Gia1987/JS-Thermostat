@@ -25,5 +25,14 @@ beforeEach(function(){
       thermostat.down(5)
       expect(thermostat._temperature).toEqual(15);
     });
+    it('raise an error if you try to go below the minimumTemperature',function(){
+      expect(function(){thermostat.down(11);}).toThrowError('Cannot go below the minimum temperature');
+    })
   });
+
+  describe('setup a minimum themperature', function(){
+    it('set a default_minimum temperature of 10 degrees', function(){
+      expect(thermostat._minimumTemperature).toEqual(10)
+    })
+  })
 });
