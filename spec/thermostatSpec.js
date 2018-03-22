@@ -35,4 +35,14 @@ beforeEach(function(){
       expect(thermostat._minimumTemperature).toEqual(10)
     })
   })
+
+  describe('set up a maximum temperature', function(){
+    it('raise an error it you try to increase above 25 when power saving mode is on', function(){
+      expect(function(){thermostat.up(6);}).toThrowError('Cannot go above 25 degrees when power saving is on');
+    })
+    it('raise an error it you try to increase above 32 when power saving mode is off', function(){
+      thermostat.powerSavingOff()
+      expect(function(){thermostat.up(13);}).toThrowError('Cannot go above 32 degrees when power saving is off');
+    })
+  })
 });
