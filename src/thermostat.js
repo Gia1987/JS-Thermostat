@@ -6,6 +6,10 @@ function Thermostat(){
   this._powerSaving = 'on'
 }
 
+Thermostat.prototype.savingMode = function(){
+  return this._powerSaving
+}
+
 Thermostat.prototype.temperature = function(){
   return this._temperature
 }

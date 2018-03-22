@@ -24,7 +24,6 @@ So I do not use too much energy,
 I want the maximum settable temperature to be 25 degrees,
 when power saving mode is on.
 
-
 As a technician,
 So I do not use too much energy,
 I want the maximum settable temperature to be 32 degrees,
