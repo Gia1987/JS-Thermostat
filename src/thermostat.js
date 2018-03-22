@@ -1,7 +1,19 @@
+'use strict';
+
 function Thermostat(){
   this._temperature = 20
   this._minimumTemperature = 10
   this._powerSaving = 'on'
+}
+
+Thermostat.prototype.usage = function(){
+  if (this._temperature < 18) {return 'low-usage'}
+  if (this._temperature < 25) {return 'medium-usage'}
+  return 'high-usage'
+}
+
+Thermostat.prototype.reSet = function(){
+  this._temperature = 20;
 }
 
 Thermostat.prototype.maxTemp = function () {

@@ -45,4 +45,28 @@ beforeEach(function(){
       expect(function(){thermostat.up(13);}).toThrowError('Cannot go above 32 degrees when power saving is off');
     })
   })
+
+  describe('re-set default temperature', function(){
+    it('re-set the temperature to 20 degrees', function(){
+      thermostat.down(5)
+      thermostat.reSet()
+      expect(thermostat._temperature).toEqual(20);
+    });
+  });
+
+  describe('checking usage', function(){
+    it('check and gives to the user a message saying low-usage', function(){
+      thermostat.down(3)
+      expect(thermostat.usage()).toEqual('low-usage');
+    });
+    it('check and gives to the user a message saying medium-usage', function(){
+      expect(thermostat.usage()).toEqual('medium-usage');
+    });
+   it('check and gives to the user a message saying high-usage', function(){
+     thermostat.up(5)
+     expect(thermostat.usage()).toEqual('high-usage');
+   });
+
+ });
+
 });
