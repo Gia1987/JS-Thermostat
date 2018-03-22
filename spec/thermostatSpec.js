@@ -12,11 +12,11 @@ beforeEach(function(){
       expect(thermostat._temperature).toEqual(20);
     });
 
-    describe('returns the temperature',function(){
-      it('returns the value of the temperature', function(){
-        expect(thermostat.temperature()).toEqual(thermostat._temperature);
-      });
+  describe('returns the temperature',function(){
+    it('returns the value of the temperature', function(){
+      expect(thermostat.temperature()).toEqual(thermostat._temperature);
     });
+  });
 
   });
   describe('allows to change the temperature', function(){
