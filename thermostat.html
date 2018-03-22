@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Thermostat</title>
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <script src="src/thermostat.js"></script>
 </head>
 <style>
  * {
@@ -14,11 +15,16 @@
    text-align:center;
    font-size:100pt;
  }
+ #powerSavingDisplay {
+   font-family: 'Orbitron', sans-serif;
+   text-align:center;
+   font-size:20pt;
+ }
  #up {
    background-repeat:no-repeat;
    border: none;
    position: absolute;
-   top: 20%;
+   top: 28%;
    left:22%;
    background-size: 260px 260px;
    height: 300px;
@@ -29,7 +35,7 @@
    background-repeat:no-repeat;
    border: none;
    position: absolute;
-   top: 20%;
+   top: 28%;
    left:52%;
    background-size: 300px 300px;
    height: 300px;
@@ -42,13 +48,24 @@
    text-align:center;
    font-size:50pt;
    position: absolute;
-   top: 50%;
-   left:40%;
+   top: 55%;
+   left:38%;
+ }
+ #powersaving-on, #powersaving-off {
+   border: 1px solid black;
+   padding: 5px;
+   font-family: 'Orbitron', sans-serif;
+   text-align:center;
+   font-size:10pt;
  }
 
 
 </style>
 <body>
+  <h3 id='powerSavingDisplay'>Power Saving Mode: <span id="power-saving-status">on</span>
+  <br>
+  <button id="powersaving-on">PSM on</button>
+  <button id="powersaving-off">PSM off</button>
   <h1 id='tempdisplay'>20 &deg;C</h1>
   <button id='up' type="button"></button>
   <button id='down' type="button"></button>
