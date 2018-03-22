@@ -67,6 +67,6 @@ beforeEach(function(){
      expect(thermostat.usage()).toEqual('high-usage');
    });
 
- });
+  });
 
 });
