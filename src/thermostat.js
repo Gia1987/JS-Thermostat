@@ -6,6 +6,10 @@ function Thermostat(){
   this._powerSaving = 'on'
 }
 
+Thermostat.prototype.temperature = function(){
+  return this._temperature
+}
+
 Thermostat.prototype.usage = function(){
   if (this._temperature < 18) {return 'low-usage'}
   if (this._temperature < 25) {return 'medium-usage'}

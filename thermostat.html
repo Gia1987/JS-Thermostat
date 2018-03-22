@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Thermostat</title>
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  <script src="src/thermostat.js"></script>
 </head>
 <style>
  * {
@@ -62,11 +61,14 @@
 
 </style>
 <body>
+  <script src="src/thermostat.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="src/interface.js"></script>
   <h3 id='powerSavingDisplay'>Power Saving Mode: <span id="power-saving-status">on</span>
   <br>
   <button id="powersaving-on">PSM on</button>
   <button id="powersaving-off">PSM off</button>
-  <h1 id='tempdisplay'>20 &deg;C</h1>
+  <h1 id='tempdisplay'>&deg;C</h1>
   <button id='up' type="button"></button>
   <button id='down' type="button"></button>
   <button id='re-set' type="button">RESET</button>
