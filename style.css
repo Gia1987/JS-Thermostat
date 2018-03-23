@@ -8,7 +8,9 @@
   color: red;
 }
 
-* {
+body {
+  padding: 0;
+  margin: 0;
   background-color: orange;
 }
 
@@ -30,36 +32,42 @@
   text-align:center;
   font-size:20pt;
 }
+
 .up {
-  background-repeat:no-repeat;
-  border: none;
-  position: absolute;
-  top: 28%;
-  left:22%;
-  background-size: 260px 260px;
-  height: 300px;
-  width: 300px;
-  background-image: url('http://clipart-library.com/data_images/509431.png');
-}
-.down {
-  background-repeat:no-repeat;
-  border: none;
-  position: absolute;
-  top: 28%;
-  left:52%;
-  background-size: 300px 300px;
-  height: 300px;
-  width: 300px;
-  background-image: url('http://clipart-library.com/images/pc58xXqRi.png');
-}
-.re-set{
+  margin: auto;
+  position: relative;
+  top: -100px;
+  left: -50px;
+  background-color: orange;
+  background-position: center;
   border: none;
   font-family: 'Orbitron', sans-serif;
   text-align:center;
   font-size:50pt;
-  position: absolute;
-  top: 55%;
-  left:38%;
+
+}
+.down {
+  margin: auto;
+  position: relative;
+  top: -100px;
+  left: 50px;
+  background-color: orange;
+  background-position: center;
+  border: none;
+  font-family: 'Orbitron', sans-serif;
+  text-align:center;
+  font-size:50pt;
+}
+
+.re-set{
+  margin: auto;
+  background-color: orange;
+  background-position: center;
+  border: none;
+  font-family: 'Orbitron', sans-serif;
+  text-align:center;
+  font-size:50pt;
+
 }
 .powersaving-on, .powersaving-off {
   border: 1px solid black;
