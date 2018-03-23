@@ -12,6 +12,14 @@
   background-color: orange;
 }
 
+.submit{
+  border: none;
+}
+
+.outsidetemperature{
+  position: relative;
+  bottom: -400px;
+}
 .tempdisplay {
   font-family: 'Orbitron', sans-serif;
   text-align:center;
