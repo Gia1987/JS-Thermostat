@@ -28,8 +28,10 @@ $(document).ready(function(){
 
 
   function updateTemperature() {
-  $('#tempdisplay').text(thermostat.temperature());
+  $('#tempdisplay').text(thermostat.temperature() + ' °C');
+  $('#tempdisplay').attr('class', thermostat.usage());
   };
+
   function powerSavingStatus() {
   $('#power-saving-status').text(thermostat.savingMode());
   };

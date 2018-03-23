@@ -4,73 +4,21 @@
   <meta charset="utf-8">
   <title>Thermostat</title>
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel= 'stylesheet' type='text/css' href="style.css">
 </head>
-<style>
- * {
-   background-color: orange;
- }
- #tempdisplay {
-   font-family: 'Orbitron', sans-serif;
-   text-align:center;
-   font-size:100pt;
- }
- #powerSavingDisplay {
-   font-family: 'Orbitron', sans-serif;
-   text-align:center;
-   font-size:20pt;
- }
- #up {
-   background-repeat:no-repeat;
-   border: none;
-   position: absolute;
-   top: 28%;
-   left:22%;
-   background-size: 260px 260px;
-   height: 300px;
-   width: 300px;
-   background-image: url('http://clipart-library.com/data_images/509431.png');
- }
- #down {
-   background-repeat:no-repeat;
-   border: none;
-   position: absolute;
-   top: 28%;
-   left:52%;
-   background-size: 300px 300px;
-   height: 300px;
-   width: 300px;
-   background-image: url('http://clipart-library.com/images/pc58xXqRi.png');
- }
- #re-set{
-   border: none;
-   font-family: 'Orbitron', sans-serif;
-   text-align:center;
-   font-size:50pt;
-   position: absolute;
-   top: 55%;
-   left:38%;
- }
- #powersaving-on, #powersaving-off {
-   border: 1px solid black;
-   padding: 5px;
-   font-family: 'Orbitron', sans-serif;
-   text-align:center;
-   font-size:10pt;
- }
-
-
-</style>
 <body>
   <script src="src/thermostat.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="src/interface.js"></script>
-  <h3 id='powerSavingDisplay'>Power Saving Mode: <span id="power-saving-status"></span>
+  <h3 class='powerSavingDisplay'id='powerSavingDisplay'>Power Saving Mode: <span id="power-saving-status"></span>
   <br>
-  <button id="powersaving-on">PSM on</button>
-  <button id="powersaving-off">PSM off</button>
-  <h1 id='tempdisplay'></h1>
-  <button id='up' type="button"></button>
-  <button id='down' type="button"></button>
-  <button id='re-set' type="button">RESET</button>
+  <button class='powersaving-on' id="powersaving-on">PSM on</button>
+  <button class='powersaving-off'id="powersaving-off">PSM off</button>
+  <div>
+    <h1 class='tempdisplay'><span id='tempdisplay'></span></h1>
+  </div>
+  <button class='up' id='up' type="button"></button>
+  <button class='down' id='down' type="button"></button>
+  <button class='re-set' id='re-set' type="button">RESET</button>
 </body>
 </html>
