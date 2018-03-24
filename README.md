@@ -11,15 +11,15 @@ This simple web app allows a user to set the temperature on a digital thermostat
 How to run the web app
 ----
 ```sh
-$ git clone git@github.com:[antcin]/thermostat-challenge.git
-$ cd Thermostat.js
-$ open index.html
+$ git clone https://github.com/Gia1987/JS-Thermostat.git
+$ cd JS-Thermostat
+$ open thermostat.html
 ```
 How to run the feature test
 ----
 
 ```sh
-$ cd Thermostat.js
+$ cd JS-Thermostat
 $ open SpecRunner.html
 ```
 
